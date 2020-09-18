@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRnow</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="qr-code.svg">
+</head>
+
+<body>
+
+    <section class="titlee"> 
+        <h1> QR Code generator</h1>
+    </section>
+
+    <section class="link">
+        <input id="place" type="text" class="place" placeholder="Inseer the text or link to be converted to QR Code" value="https://github.com/stashox">
+        <img class="btn-icon" src="/send.svg" onclick="makeCode()">
+    </section>
+
+    <div id="qrcode"></div>
+
+    <script type="text/javascript">
+    </script>
+    <script src="qrcode.min.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
